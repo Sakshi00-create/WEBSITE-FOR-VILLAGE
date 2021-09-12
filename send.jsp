@@ -33,7 +33,7 @@
          Class.forName("org.apache.derby.jdbc.ClientDriver"); 
              String email=request.getParameter("mail");
              out.println("3");
-            java.sql.Connection con=DriverManager.getConnection("jdbc:derby://localhost:1527/sign","sakshi","sakshi");
+            java.sql.Connection con=DriverManager.getConnection("jdbc:derby://localhost:1527/sign","","");
             
             String query = "select PASS from sign where EMAIL LIKE '"+email+"'";
             PreparedStatement statmnt = con.prepareStatement(query);
