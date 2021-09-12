@@ -52,7 +52,7 @@
                 message.saveChanges();
                 Transport transport = session1.getTransport("smtp");
                 out.println("5");
-                transport.connect("smtp.gmail.com", "sakshisharma0526@gmail.com", "Sakshi26@");
+                transport.connect("smtp.gmail.com", "email", "pass");
                 transport.sendMessage(message, message.getAllRecipients());
                 out.println("6");
                 transport.close();
